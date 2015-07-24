@@ -1,0 +1,126 @@
+//====================================================
+//------------------ Product Detail ------------------
+//====================================================
+
+#product-detail {
+	@include rem("padding", 35, 0);
+	*, *:after, *:before {
+		margin: 0;
+		padding: 0;
+	}
+	.box-photo {
+		float: left;
+		width: 350px;
+	}
+	.box-info {
+		float: right;
+		width: 555px;
+	}
+	h2.name {
+		font-weight: 600;
+		@include rem("font-size", 19);
+	}
+	.volume {
+		font-family: latoItalic;
+		@include rem("font-size", 15);
+		@include rem("padding", 0, 0, 15, 0);
+	}
+	.sub-detail {
+		font-family: latoRegular;
+		@include rem("font-size", 13);
+		@include rem("line-height", 20);
+		@include rem("padding", 0, 0, 20, 0);
+	}
+	.utility {
+		@include rem("padding", 0, 0, 15, 0);
+		li {
+			float: left;
+			height: 45px;
+			text-transform: uppercase;
+			font-family: latoBoldItalic;
+			@include rem("font-size", 13);
+			@include rem("line-height", 35);
+			@include rem("padding", 0, 25, 0, 45);
+			&.detoxflush {
+				color: #9db122;
+				@include rem("padding", 0, 0, 0, 50);
+				background: url(../images/product-page/ic_detoxflush.png) no-repeat left top;
+			}
+			&.enerybooster {
+				color: #006838;
+				background: url(../images/product-page/ic_enerybooster.png) no-repeat left top;
+			}
+		}
+	}
+	.ingredients, .benifit {
+		h3 {
+			text-transform: uppercase;
+			font-family: latoItalic;
+			@include rem("font-size", 13);
+			@include rem("line-height", 20);
+			@include rem("padding", 0, 0, 5, 0);
+		}
+		p {
+			font-family: latoItalic;
+			@include rem("font-size", 13);
+			@include rem("line-height", 20);
+			@include rem("padding", 0, 0, 20, 0);
+		}
+	}
+	.quanlity {
+		h3 {
+			text-transform: uppercase;
+			font-family: latoRegular;
+			@include rem("font-size", 13);
+			@include rem("line-height", 20);
+			@include rem("padding", 0, 0, 5, 0);
+		}
+		p {
+
+		}
+		input[type="number"] {
+			text-align: center;
+			@include rem("font-size", 13);
+			@include rem("line-height", 20);
+		}
+	}
+	.quantity {
+		input[name="quantity"] {
+			width: 20px;
+			text-align: center;
+			@include rem("font-size", 15);
+			@include rem("padding", 2);
+			vertical-align: bottom;
+		}
+	}
+	.box-count {
+		width: 20px;
+		height: 25px;
+		display: inline-block;
+		position: relative;
+		.ar-count {
+			display: inline-block;
+			width: 20px;
+			height: 12px;
+			@include replace-text();
+			background: url(../images/product-page/ar_count.png) no-repeat;
+			&.ar-up {
+				position: absolute;
+				background-position: 0 top;
+			}
+			&.ar-down {
+				background-position: 0 bottom;
+			}
+		}
+	}
+	.box-link {
+		@include rem("padding", 30, 0, 0, 0);
+		.btn-order {
+			display: block;
+			width: 131px;
+			height: 39px;
+			@include replace-text();
+			background: url(../images/product-detail/btn_order.png) no-repeat;
+		}
+	}
+}

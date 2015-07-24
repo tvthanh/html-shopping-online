@@ -1,0 +1,63 @@
+//====================================================
+//---------------------- Learn -----------------------
+//====================================================
+
+#learn {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 0, 0, 30, 0);
+	*, *:after, *:before {
+		margin: 0;
+		padding: 0;
+	}
+	.banner {
+		@include rem("padding", 35, 0);
+		img {
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.block-one {
+		@include rem("padding", 0, 0, 50, 0);
+	}
+	.block-two {
+	}
+	h2 {
+		text-align: center;
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 21);
+		@include rem("line-height", 20);
+		@include rem("padding", 30, 0);
+	}
+	h3 {
+		text-align: center;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 14);
+		@include rem("line-height", 20);
+		@include rem("padding", 0, 0, 10, 0);
+	}
+	.para {
+		text-align: center;
+		font-family: latoRegular;
+		@include rem("font-size", 13);
+		@include rem("line-height", 20);
+		@include rem("padding", 0, 0, 20, 0);
+	}
+	.list-benefit {
+		@include rem("margin", 0, 0, 0, -11);
+		li {
+			float: left;
+			width: 315px;
+			text-align: center;
+			@include rem("margin", 0, 0, 0, 11);
+			@include rem("padding", 0, 0, 10, 0);
+		}
+	}
+	p.number {
+		text-align: center;
+		@include rem("padding", 0, 0, 10, 0);
+	}
+}

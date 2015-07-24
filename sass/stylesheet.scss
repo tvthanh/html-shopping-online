@@ -1,0 +1,50 @@
+//====================================================
+//----------------- Common Stylesheet ----------------
+//====================================================
+
+// Compass
+@import "compass";
+
+// Base
+//====================================================
+@import "base/bootstrap";
+@import "base/bootstrap-theme";
+// @import "base/reset";
+@import "base/normalize";
+@import "base/mixins";
+@import "base/settings";
+@import "base/font-awesome";
+@import "base/fonts";
+
+
+// Layout
+//====================================================
+// @import "layout/grid";
+@import "layout/page";
+@import "layout/jssorSlider";
+// @import "layout/datepicker";
+
+
+// Modules
+//====================================================
+// @import "modules/header";
+// @import "modules/index";
+// @import "modules/about";
+// @import "modules/contact";
+// @import "modules/login";
+// @import "modules/forgotpassword";
+// @import "modules/learn";
+// @import "modules/productPage";
+// @import "modules/productDetail";
+// @import "modules/orderPick";
+// @import "modules/cleanProduct";
+// @import "modules/orderClean";
+// @import "modules/chooseYourJuice";
+// @import "modules/cart";
+// @import "modules/personalDetail";
+// @import "modules/footer";
+
+
+// Themes
+//====================================================
+@import "themes/blue";

@@ -1,0 +1,81 @@
+//====================================================
+//------------------- Order Pick -------------------
+//====================================================
+
+#order-pick {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 0, 0, 30, 0);
+	*, *:after, *:before {
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		text-align: center;
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 19);
+		@include rem("line-height", 20);
+		@include rem("padding", 35, 0, 25, 0);
+	}
+	.para-order {
+		text-align: center;
+		font-family: latoRegular;
+		@include rem("font-size", 13);
+		@include rem("line-height", 18);
+		@include rem("padding", 0, 0, 40, 0);
+	}
+	.banner {
+		text-align: center;
+		@include rem("padding", 0, 0, 70, 0);
+	}
+	.list-order {
+		@include rem("margin", 0, 0, 0, -23);
+		> li {
+			width: 311px;
+			min-height: 535px;
+			float: left;
+			@include rem("margin", 0, 0, 0, 23);
+			> a {
+				color: #1d1d1b;
+				text-align: center;
+				text-decoration: none;
+			}
+		}
+		img.product {
+			width: 310px;
+			height: 410px;
+			text-align: center;
+		}
+		span.name {
+			display: block;
+			font-weight: 600;
+			text-transform: uppercase;
+			@include rem("font-size", 14);
+			@include rem("padding", 15, 0, 0, 0);
+		}
+	}
+	.discrition {
+		text-align: center;
+		@include rem("padding", 15, 0);
+		h3.name {
+			font-weight: 600;
+			text-transform: uppercase;
+			@include rem("font-size", 14);
+			@include rem("padding", 0, 0, 15, 0);
+		}
+		.intro {
+			font-family: latoItalic;
+			@include rem("font-size", 13);
+			@include rem("line-height", 20);
+		}
+		.price {
+			text-align: center;
+			text-transform: uppercase;
+			font-family: latoRegular;
+			@include rem("font-size", 13);
+			@include rem("padding", 5, 0, 0, 0);
+		}
+	}
+}

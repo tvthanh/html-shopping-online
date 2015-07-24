@@ -1,0 +1,107 @@
+//====================================================
+//---------------------- Login -----------------------
+//====================================================
+
+#login-page {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 0, 0, 80, 0);
+	*, *:after, *:before {
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		text-align: center;
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 19);
+		@include rem("padding", 35, 0, 30, 0);
+		margin: 0;
+	}
+	h3 {
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 14);
+		@include rem("line-height", 20);
+		@include rem("padding", 0, 0, 8, 0);
+		@include rem("margin", 0, 0, 12, 0);
+		border-bottom: 1px solid #000;
+	}
+	p.para {
+		color: #2f2f2f;
+		font-weight: 600;
+		@include rem("font-size", 14);
+		@include rem("line-height", 25);
+	}
+	.login-new {
+		width: 445px;
+		min-height: 420px;
+		float: left;
+		position: relative;
+		border: 1px solid #000;
+		@include rem("padding", 15);
+	}
+	.login-register {
+		width: 445px;
+		min-height: 420px;
+		float: right;
+		position: relative;
+		border: 1px solid #000;
+		@include rem("padding", 15);
+	}
+	.detail {
+		min-height: 380px;
+	}
+	.btn-create, .btn-login {
+		// position: absolute;
+		// right: 15px;
+		// bottom: 15px;
+		float: right;
+		color: #fff;
+		text-align: center;
+		border: none;
+		cursor: pointer;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		@include rem("padding", 7, 15);
+		background-color: #000;
+	}
+	.box-ipt {
+		@include rem("padding", 0, 0, 10, 0);
+		label {
+			display: block;
+			color: #666;
+			@include rem("font-size", 14);
+			@include rem("line-height", 25);
+			@include rem("padding", 0, 0, 3, 0);
+		}
+		input {
+			width: 250px;
+			@include rem("padding", 5);
+		}
+	}
+	.para-require {
+		font-weight: normal;
+		text-align: right;
+		color: #E06A2D;
+		@include rem("font-size", 12);
+		@include rem("line-height", 25);
+	}
+	.require {
+		color: #eb340a;
+	}
+	.link-pass {
+		float: left;
+		color: #E06A2D;
+		letter-spacing: 0.1em;
+		@include rem("font-size", 13);
+		@include rem("line-height", 25);
+		@include rem("padding", 4, 0, 0, 0);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

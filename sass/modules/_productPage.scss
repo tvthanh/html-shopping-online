@@ -1,0 +1,203 @@
+//====================================================
+//------------------- Product Page -------------------
+//====================================================
+
+#product-page {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 0, 0, 80, 0);
+	h2 {
+		text-align: center;
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 19);
+		@include rem("padding", 35, 0, 20, 0);
+		margin: 0;
+	}
+	.para-product {
+		color: #1d1d1b;
+		text-align: center;
+		font-family: latoRegular;
+		@include rem("font-size", 13);
+		@include rem("padding", 0, 0, 50, 0);
+	}
+	.banner {
+		text-align: center;
+		@include rem("padding", 0, 0, 70, 0);
+	}
+	.list-menu {
+		@include rem("margin", 0, 0, 0, -23);
+		> li {
+			width: 311px;
+			min-height: 480px;
+			float: left;
+			@include rem("margin", 0, 0, 0, 23);
+			> a {
+				color: #1d1d1b;
+				text-align: center;
+				text-decoration: none;
+			}
+		}
+		img.product {
+			width: 311px;
+			height: 311px;
+			text-align: center;
+		}
+		span.name {
+			display: block;
+			font-weight: 600;
+			text-transform: uppercase;
+			@include rem("font-size", 14);
+			@include rem("padding", 15, 0, 0, 0);
+		}
+	}
+	.discrition {
+		text-align: center;
+		text-transform: uppercase;
+		@include rem("padding", 0, 0, 15, 0);
+		h3.name {
+			margin: 0;
+			font-weight: 600;
+			@include rem("font-size", 14);
+		}
+		.constituent {
+			font-family: latoItalic;
+			@include rem("font-size", 12);
+		}
+		input[name="quantity"] {
+			text-align: center;
+			@include rem("font-size", 15);
+		}
+		.benifit {
+			display: none;
+			font-family: latoBoldItalic;
+			@include rem("font-size", 12);
+			&.antioxidantshot {
+				color: #f59c00;
+			}
+			&.beautyanti-aging {
+				color: #ec8123;
+			}
+			&.detoxflush {
+				color: #9db122;
+			}
+			&.enerybooster {
+				color: #006838;
+			}
+			&.hearthealth {
+				color: #eb6058;
+			}
+			&.musclepower {
+				color: #7d6d48;
+			}
+		}
+	}
+	.utility {
+		height: 60px;
+		*display: inline;
+		> li {
+			display: inline-block;
+			@include replace-text();
+			&.antioxidantshot {
+				width: 35px;
+				height: 32px;
+				background: url(../images/product-page/ic_antioxidantshot.png) no-repeat;
+			}
+			&.beautyanti-aging {
+				width: 33px;
+				height: 34px;
+				background: url(../images/product-page/ic_beautyanti-aging.png) no-repeat;
+			}
+			&.detoxflush {
+				width: 37px;
+				height: 35px;
+				background: url(../images/product-page/ic_detoxflush.png) no-repeat;
+			}
+			&.enerybooster {
+				width: 33px;
+				height: 34px;
+				background: url(../images/product-page/ic_enerybooster.png) no-repeat;
+			}
+			&.hearthealth {
+				width: 39px;
+				height: 35px;
+				background: url(../images/product-page/ic_hearthealth.png) no-repeat;
+			}
+			&.musclepower {
+				width: 38px;
+				height: 34px;
+				background: url(../images/product-page/ic_musclepower.png) no-repeat;
+			}
+		}
+	}
+}
+
+.group-controll {
+	.box-view {
+		float: left;
+		width: 45%;
+		li {
+			float: left;
+			@include rem("margin", 0, 5, 0, 0);
+			a {
+				color: #000;
+				font-family: latoRegular;
+				font-weight: 600;
+				@include rem("font-size", 13);
+			}
+		}
+	}
+	.box-paging {
+		float: right;
+		width: 45%;
+		text-align: right;
+		@include rem("padding", 0, 0, 30, 0);
+		p {
+			color: #000;
+			display: inline-block;
+			text-transform: uppercase;
+			@include rem("font-size", 13);
+			@include rem("padding", 0, 5);
+		}
+	}
+	.inner-paging {
+		display: inline-block;
+	}
+}
+
+.pagination-holder {
+	display: inline-block;
+}
+
+.pagination ul {
+	> li {
+		display: inline-block;
+		&.active {
+			span {
+				text-decoration: underline;
+			}
+		}
+		span {
+			color: #000;
+			text-transform: uppercase;
+			@include rem("font-size", 13);
+		}
+		a {
+			color: #000;
+			text-decoration: none;
+			@include rem("padding", 0, 5);
+			@include rem("font-size", 13);
+			&.prev, &.next {
+				display: none;
+				@include replace-text();
+			}
+		}
+		span {
+			&.prev, &.next {
+				display: none;
+				@include replace-text();
+			}
+		}
+	}
+}

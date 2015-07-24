@@ -1,0 +1,106 @@
+//====================================================
+//------------------ Personal Detail------------------
+//====================================================
+
+#personal-detail {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 0, 0, 30, 0);
+	*, *:after, *:before {
+		margin: 0;
+		padding: 0;
+	}
+	h3 {
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 21);
+		@include rem("line-height", 20);
+		@include rem("padding", 35, 0, 15, 0);
+		border-bottom: 1px solid #000;
+	}
+	.tbl-group {
+		width: 100%;
+		th {
+			text-align: left;
+			vertical-align: middle;
+			font-weight: 600;
+			@include rem("font-size", 14);
+			@include rem("line-height", 20);
+			@include rem("padding", 15, 0);
+			border-bottom: 1px solid #000;
+		}
+		td {
+			text-align: left;
+			vertical-align: top;
+			@include rem("font-size", 14);
+			@include rem("padding", 20, 0);
+			border-bottom: 1px solid #000;
+			&.col01 {
+				width: 180px;
+			}
+			&.col02 {
+				width: 250px;
+			}
+			&.col03 {
+				width: 290px;
+			}
+			&.col04 {
+				width: 195px;
+			}
+			&.col05 {
+				width: 70px;
+			}
+		}
+		input[type="radio"] {
+			@include rem("margin", 0, 0, 0, 25);
+		}
+	}
+	.box-controll {
+		@include rem("padding", 25, 0);
+		li {
+			float: left;
+			color: #808080;
+			@include rem("font-size", 13);
+			a {
+				color: #808080;
+				@include rem("font-size", 13);
+				@include rem("line-height", 25);
+			}
+		}
+	} 
+	.personal-one {
+		.inner {
+			@include rem("padding", 30, 0, 25, 0);
+			border-bottom: 1px solid #000;
+		}
+		p {
+			color: #000;
+			font-weight: 600;
+			text-transform: uppercase;
+			@include rem("font-size", 13);
+			@include rem("line-height", 25);
+		}
+	}
+	.tbl-personal {
+		td {
+			&.col01 {
+				width: 705px;
+			}
+			&.col02 {
+				width: 185px;
+			}
+			&.col03 {
+				width: 91px;
+			}
+		}
+	}
+	.tbl-order {
+		.btn-view {
+				color: #808080;
+				@include rem("font-size", 13);
+				@include rem("line-height", 25);
+				@include rem("margin", 0, 0, 0, 15);
+		}
+	}
+}

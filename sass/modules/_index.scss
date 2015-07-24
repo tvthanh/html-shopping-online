@@ -1,0 +1,46 @@
+//====================================================
+//----------------------- Index ----------------------
+//====================================================
+
+#content {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0e5;
+}
+
+#main {
+	margin: 0 auto;
+	@include rem("padding", 35, 0);
+}
+
+.gallery {
+	width: 100%;
+	height: 567px;
+	position: relative;
+	overflow: hidden;
+	.bx-pager {
+		position: absolute;
+		left: 45%;
+		z-index: 150;
+		text-align: center;
+		padding: 0;
+		@include rem("margin", -50, 0, 0 ,0);
+		.bx-pager-item {
+			display: inline;
+		}
+		a {
+			width: 11px;
+			height: 11px;
+			margin: 0 8px;
+			text-align: center;
+			display: inline-block;
+			@include replace-text();
+			background: url(../images/index/ic_bullet.png) no-repeat;
+			background-position: -27px 0;
+			&.active, &:hover {
+				background-position: 0 0;
+			}
+		}
+	}
+}

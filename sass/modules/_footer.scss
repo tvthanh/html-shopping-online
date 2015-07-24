@@ -1,0 +1,120 @@
+//====================================================
+//----------------------- Footer ---------------------
+//====================================================
+#footer {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 25, 0, 32, 0);
+}
+
+.inner-footer {
+	margin: 0 auto;
+}
+
+.info-brand {
+	float: left;
+	width: 50%;
+}
+
+.nav-footer {
+	width: 170px;
+	background: url(../images/index/nav_footer.png) no-repeat left bottom;
+	> li {
+		float: left;
+		height: 20px;
+		position: relative;
+		> a {
+			height: 20px;
+			display: block;
+			@include replace-text();
+			background: url(../images/index/nav_footer.png) no-repeat left top;
+		}
+		&.item01 {
+			width: 46px;
+			@include rem("margin", 0, 16, 0, 0);
+			> a {
+				background-position: 0 0;
+			}
+		}
+		&.item02 {
+			width: 28px;
+			@include rem("margin", 0, 14, 0, 0);
+			> a {
+				background-position: -62px 0;
+			}
+		}
+		&.item03 {
+			width: 66px;
+			> a {
+				background-position: -104px 0;
+			}
+		}
+	}
+}
+
+.copyright {
+	color: $purple-color;
+	text-transform: uppercase;
+	font-weight: 600;
+	@include rem("font-size", 10);
+}
+
+.info-social {
+	width: 350px;
+	float: right;
+	.social {
+		width: 105px;
+		float: left;
+		li {
+			width: 34px;
+			height: 34px;
+			float: left;
+			margin: 0 15px 0 0;
+			a {
+				width: 34px;
+				height: 34px;
+				display: block;
+				@include replace-text();
+				background: url(../images/index/ic_social.png) no-repeat;
+			}
+			&.facebook {
+				a {
+					background-position: 0 0;
+				}
+			}
+			&.instagram {
+				a {
+					background-position: -45px 0;
+				}
+			}
+		}
+	}
+	.form-search {
+		width: 245px;
+		float: right;
+	}
+	.box-search {
+		padding: 5px 0 0 0;
+		background: url(../images/index/ipt_search.png) no-repeat left bottom;
+		.ipt-text {
+			float: left;
+			width: 194px;
+			background: transparent;
+			border: none;
+			text-align: center;
+			color: $purple-color;
+			text-transform: uppercase;
+			font-weight: 600;
+			@include rem("font-size", 10);
+			@include rem("padding", 7, 5, 5, 5);
+		}
+		.ipt-submit {
+			float: left;
+			width: 35px;
+			height: 25px;
+			border: none;
+			@include replace-text();
+			background: transparent;
+		}
+	}
+}

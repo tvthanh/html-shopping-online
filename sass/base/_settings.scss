@@ -1,0 +1,26 @@
+/* ==========================================================================
+Settings
+========================================================================== */
+
+// The font family
+$helvetica          	: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$lato 								: "Lato", sans-serif;
+$gothic             	: "メイリオ",Meiryo,"MS PGothic","MS Ｐゴシック","ヒラギノ角ゴ","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro"!default;
+$serif            	  : Georgia, Cambria, "Times New Roman", Times, serif!default;
+$monospace          	: "Bitstream Vera Sans Mono", Consolas, Courier, monospace!default;
+
+// Layout Breakpoints
+$maxWidth: 1280;
+
+// Font Sizes
+$regularSize: 12;
+
+// Base the color
+$primary-color      	: #222;
+$secondary-color    	: #444;
+$purple-color					: #9b1b64;
+
+// Font font weight 
+$font-weight-regular 	: 400;
+$font-weight-medium 	: 600;
+$font-weight-bold 		: 700;

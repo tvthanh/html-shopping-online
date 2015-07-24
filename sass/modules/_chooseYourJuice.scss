@@ -1,0 +1,195 @@
+//====================================================
+//------------------ Choose Your Juice ---------------
+//====================================================
+
+#choose-juice {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 0, 0, 80, 0);
+	h2 {
+		text-align: center;
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 19);
+		@include rem("padding", 35, 0, 30, 0);
+		margin: 0;
+	}
+	.banner {
+		text-align: center;
+		@include rem("padding", 0, 0, 70, 0);
+	}
+	.bnr-product {
+		width: 583px;
+		height: 203px;
+		margin: 0 auto;
+		padding: 0;
+		display: block;
+		background: url(../images/product-page/bnr_product.png) no-repeat;
+		&.chosen_0 {
+			background-position: 0 0;
+		}
+		&.chosen_1 {
+			background-position: 0 -203px;
+		}
+		&.chosen_2 {
+			background-position: 0 -406px;
+		}
+		&.chosen_3 {
+			background-position: 0 -609px;
+		}
+		&.chosen_4 {
+			background-position: 0 -812px;
+		}
+		&.chosen_5 {
+			background-position: 0 -1015px;
+		}
+		&.chosen_6 {
+			background-position: 0 -1218px;
+		}
+	}
+	.list-menu {
+		@include rem("margin", 0, 0, 0, -23);
+		> li {
+			width: 311px;
+			min-height: 520px;
+			float: left;
+			@include rem("margin", 0, 0, 0, 23);
+			> a {
+				color: #1d1d1b;
+				text-align: center;
+				text-decoration: none;
+			}
+		}
+		img.product {
+			width: 311px;
+			height: 311px;
+			text-align: center;
+		}
+		span.name {
+			display: block;
+			font-weight: 600;
+			text-transform: uppercase;
+			@include rem("font-size", 14);
+			@include rem("padding", 15, 0, 0, 0);
+		}
+	}
+	.discrition {
+		text-align: center;
+		text-transform: uppercase;
+		@include rem("padding", 0, 0, 15, 0);
+		h3.name {
+			margin: 0;
+			font-weight: 600;
+			@include rem("font-size", 14);
+		}
+		.constituent {
+			font-family: latoItalic;
+			@include rem("font-size", 12);
+		}
+		.benifit {
+			display: none;
+			font-family: latoBoldItalic;
+			@include rem("font-size", 12);
+			&.antioxidantshot {
+				color: #f59c00;
+			}
+			&.beautyanti-aging {
+				color: #ec8123;
+			}
+			&.detoxflush {
+				color: #9db122;
+			}
+			&.enerybooster {
+				color: #006838;
+			}
+			&.hearthealth {
+				color: #eb6058;
+			}
+			&.musclepower {
+				color: #7d6d48;
+			}
+		}
+	}
+	.utility {
+		height: 60px;
+		*display: inline;
+		> li {
+			display: inline-block;
+			@include replace-text();
+			&.antioxidantshot {
+				width: 35px;
+				height: 32px;
+				background: url(../images/product-page/ic_antioxidantshot.png) no-repeat;
+			}
+			&.beautyanti-aging {
+				width: 33px;
+				height: 34px;
+				background: url(../images/product-page/ic_beautyanti-aging.png) no-repeat;
+			}
+			&.detoxflush {
+				width: 37px;
+				height: 35px;
+				background: url(../images/product-page/ic_detoxflush.png) no-repeat;
+			}
+			&.enerybooster {
+				width: 33px;
+				height: 34px;
+				background: url(../images/product-page/ic_enerybooster.png) no-repeat;
+			}
+			&.hearthealth {
+				width: 39px;
+				height: 35px;
+				background: url(../images/product-page/ic_hearthealth.png) no-repeat;
+			}
+			&.musclepower {
+				width: 38px;
+				height: 34px;
+				background: url(../images/product-page/ic_musclepower.png) no-repeat;
+			}
+		}
+	}
+	.quantity {
+		@include rem("padding", 0, 0, 10, 0);
+		position: relative;
+		input[name="quantity"] {
+			width: 20px;
+			text-align: center;
+			@include rem("font-size", 15);
+			@include rem("padding", 5);
+			vertical-align: bottom;
+		}
+	}
+	.box-count {
+		width: 20px;
+		height: 25px;
+		display: inline-block;
+		position: relative;
+		.ar-count {
+			display: inline-block;
+			width: 20px;
+			height: 12px;
+			@include replace-text();
+			background: url(../images/product-page/ar_count.png) no-repeat;
+			&.ar-up {
+				position: absolute;
+				background-position: 0 top;
+			}
+			&.ar-down {
+				background-position: 0 bottom;
+			}
+		}
+	}
+	.box-link {
+		@include rem("padding", 45, 0, 0, 0);
+		text-align: center;
+		.btn-order {
+			display: block;
+			width: 131px;
+			height: 39px;
+			margin: 0 auto;
+			@include replace-text();
+			background: url(../images/product-detail/btn_order.png) no-repeat;
+		}
+	}
+}

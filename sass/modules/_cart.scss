@@ -1,0 +1,179 @@
+//====================================================
+//---------------------- Cart ------------------------
+//====================================================
+
+#cart-content {
+	width: 100%;
+	margin: 0;
+	@include rem("padding", 0, 0, 30, 0);
+	*, *:after, *:before {
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		text-align: center;
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 21);
+		@include rem("line-height", 20);
+		@include rem("padding", 35, 0);
+	}
+	h3 {
+		color: $purple-color;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 21);
+		@include rem("line-height", 20);
+		@include rem("padding", 35, 0, 15, 0);
+		border-bottom: 1px solid #000;
+	}
+	.tbl-cart {
+		width: 100%;
+		th {
+			text-align: left;
+			vertical-align: middle;
+			font-weight: 600;
+			@include rem("font-size", 14);
+			@include rem("line-height", 20);
+			@include rem("padding", 15, 0);
+			border-bottom: 1px solid #000;
+		}
+		td {
+			text-align: left;
+			vertical-align: top;
+			@include rem("font-size", 14);
+			@include rem("padding", 20, 0);
+			border-bottom: 1px solid #000;
+			&.col01 {
+				width: 180px;
+			}
+			&.col02 {
+				width: 250px;
+			}
+			&.col03 {
+				width: 290px;
+			}
+			&.col04 {
+				width: 195px;
+			}
+			&.col05 {
+				width: 70px;
+			}
+		}
+		input[type="number"] {
+			text-align: center;
+			@include rem("font-size", 14);
+			@include rem("line-height", 20);
+			@include rem("padding", 3, 0);
+		}
+	}
+	.datepicker {
+		width: 150px;
+	  display: inline-block;
+	  @include rem("font-size", 14);
+	  // @include rem("line-height", 22);
+	  @include rem("padding", 7, 5);
+	  @include rem("margin", 0, 5, 0, 0);
+	}
+	.datepicker + img {
+					display: inline-block;
+				  vertical-align: top;
+				}
+	.box-detail {
+		min-height: 180px;
+		position: relative;
+		@include rem("padding", 0, 0, 0, 30);
+		h4 {
+			color: #000;
+			font-weight: 600;
+			text-transform: uppercase;
+			@include rem("font-size", 14);
+			@include rem("line-height", 18);
+		}
+		p {
+			color: #000;
+			font-family: latoRegular;
+			text-transform: uppercase;
+			@include rem("font-size", 13);
+			@include rem("line-height", 18);
+		}
+	}
+	.cart-controll {
+		position: absolute;
+		left: 22px;
+		bottom: -5px;
+		li {
+			float: left;
+			@include rem("padding", 0, 0, 0, 8);
+			a {
+				color: #808080;
+				font-family: latoRegular;
+				text-transform: uppercase;
+				text-decoration: none;
+				@include rem("font-size", 11);
+				@include rem("line-height", 20);
+				@include rem("padding", 0, 4, 0, 0);
+			}
+		}
+	}
+
+	.box-checkout {
+		float: right;
+		width: 550px;
+		font-weight: 600;
+		text-transform: uppercase;
+		@include rem("font-size", 14);
+		@include rem("line-height", 20);
+		@include rem("padding", 30, 0);
+	}
+	.box-apply {
+		@include rem("padding", 0, 0, 30, 0);
+		border-bottom: 1px solid #000;
+		span {
+			@include rem("padding", 8, 30, 8, 0);
+			@include rem("line-height", 20);
+		}
+		input[name="code"] {
+			width: 225px;
+			height: 20px;
+			@include rem("font-size", 14);
+			@include rem("line-height", 20);
+			@include rem("padding", 5, 0, 5, 0);
+			@include rem("margin", 0, 25, 0, 0);
+		}
+		input[name="apply"] {
+			width: 80px;
+			height: 33px;
+			@include replace-text();
+			@include rem("line-height", 44);
+			background: url(../images/cart/btn_apply.png) no-repeat;
+		}
+	}
+	.list-checkout {
+		@include rem("padding", 25, 0, 10, 0);
+		p {
+			@include rem("padding", 0, 0, 15, 0);
+			&.total {
+				border-bottom: 1px solid #000;
+				@include rem("padding", 50, 0, 25, 0);
+				@include rem("margin", 0, 0, 30, 0);
+			}
+		}
+		span.name {
+			float: left;
+		}
+		span.price {
+			float: right;
+			text-align: right;
+		}
+		input[name="checkout"] {
+			width: 131px;
+			height: 39px;
+			float: right;
+			@include replace-text();
+			@include rem("line-height", 44);
+			background: url(../images/cart/btn_checkout.png) no-repeat;
+		}
+	}
+}
