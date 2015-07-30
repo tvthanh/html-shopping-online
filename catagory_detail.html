@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catagory detail</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container clearfix">
+          <div class="logo">
+            <a href="index.html" class="over4"><img src="images/logo.png" /></a>
+          </div> <!-- logo -->
+          <div class="hot-line pull-right">
+            <h3><span>(800)</span><i>1444 000 4040</i></h3>
+          </div> <!-- header-contact -->
+          <div class="btn-bar">
+            <i class="fa fa-bars fa-3x"></i>
+          </div> <!-- btn-bar -->
+          <div class="search-cart pull-right clearfix">
+            <div class="box-icon pull-right clearfix">
+              <div class="pull-left ic-search">
+                <i class="fa fa-search fa-2x"></i>
+              </div> <!-- ic-search -->
+              <a href="#" class="pull-right ic-cart">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+                <em>1</em>
+              </a> <!-- ic-cart -->
+            </div> <!-- box-icon -->
+            <form class="form-search pull-left" role="search">
+              <input type="text" class="form-control" id="ipt-search" placeholder="Search">
+            </form> <!-- form-search -->
+          </div> <!-- search-cart -->
+        </div> <!-- container -->
+      </div> <!-- header-top -->
+      <nav class="navigation">
+        <div class="container clearfix">
+          <div class="box-navi pull-left">
+            <ul class="list-unstyled list-inline">
+              <li><a href="#">New today</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop body catagory <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu" id="shop-by-category">
+                  <li><a href="catagory_detail.html">girls</a></li>
+                  <li><a href="product_detail.html">boys</a></li>
+                  <li><a href="catagory_detail.html">women</a></li>
+                </ul>
+              </li> <!-- Shop body catagory -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop by size <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu" id="shop-by-size">
+                  <li class="clearfix">
+                    <div class="shop-by-age-column">
+                      <h3 class="futura">Girls</h3>
+                      <ul class="reset list-unstyled">
+                        <li><a href="#" class="">0-24m</a></li>
+                        <li><a href="#" class="">2T-4T</a></li>
+                        <li><a href="#" class="">4-6</a></li>
+                        <li><a href="#" class="">7-12</a></li>
+                        <li><a href="#" class="">14-16</a></li>
+                        <li><a href="#" class="">shoes</a></li>
+                      </ul>
+                    </div>
+                    <div class="shop-by-age-column">
+                      <h3 class="futura">Boys</h3>
+                      <ul class="reset list-unstyled">
+                        <li><a href="#" class="">0-24m</a></li>
+                        <li><a href="#" class="">2T-4T</a></li>
+                        <li><a href="#" class="">4-7</a></li>
+                        <li><a href="#" class="">8-12</a></li>
+                        <li><a href="#" class="">14-20</a></li>
+                        <li><a href="#" class="">shoes</a></li>
+                      </ul>
+                    </div>
+                    <div class="shop-by-age-column">
+                      <h3 class="futura">Women</h3>
+                      <ul class="reset list-unstyled">
+                        <li><a href="#" class="">juniors</a></li>
+                        <li><a href="#" class="">women</a></li>
+                        <li><a href="#" class="">plus-size</a></li>
+                        <li><a href="#" class="">maternity &amp; nursing</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul> <!-- shop-by-size -->
+              </li>
+            </ul> <!-- nav-main -->
+          </div> <!-- box-navi -->
+          <div class="nav navbar-nav navbar-right hidden-xs hidden-sm clearfix">
+            <ul class="nav-setting list-unstyled list-inline pull-left">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu account-sitting">
+                  <li><a href="#">Orders</a></li>
+                  <li><a href="#">Account Info</a></li>
+                  <li><a href="#">My Favorites</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Sign Out</a></li>
+                </ul>
+              </li>
+              <li> | </li>
+              <li class="flag-controll">
+                <a href="#"> 
+                  <img src="images/usa.gif" height="13" alt="">
+                  <span class="countryside">USA</span>
+                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#"> 
+                      <img src="images/usa.gif" height="13" alt="">
+                      <span class="countryside">USA</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul> <!-- nav-setting -->
+          </div> <!-- box-form -->
+        </div> <!-- container -->
+      </nav> <!-- navigation -->
+    </header>
+
+    <main id="main-content">
+      <div class="container">
+        <div class="row">
+          <div id="catagory-detail">
+            <div class="catagory-top">
+              <div class="clearfix">
+                <div class="col-xs-12 col-sm-6 col-md-4 photo clearfix">
+                  <ul class="list-thumbs col-md-3 hidden-xs hidden-sm no-gutter pull-left">
+                    <li><img src="images/product_02.jpg" alt="" width="95" height="95"></li>
+                    <li><img src="images/product_02.jpg" alt="" width="95" height="95"></li>
+                    <li><img src="images/product_02.jpg" alt="" width="95" height="95"></li>
+                  </ul> <!-- list-thumbs -->
+                  <img class="top img-responsive col-xs-12 col-sm-12 col-md-9 no-gutter pull-right" src="images/product_02.jpg" alt="">
+                </div> <!-- photo -->
+                <div class="col-xs-12 col-sm-6 col-md-8 description">
+                  <h2>Toys From the Big Red Bag <em class="sale-off">up to 60% off</em></h2>
+                  <div class="para-detail">
+                    <p>It's that time of the year when the Nice List gets its summer update. Santa's been known to drop off a thing or two early, which is why we curated this festive collection. From ride-ons to pretend-play picks, here are all the classics you’d expect to see in the big velvet bag, plus picks for outdoor play!</p>
+                  </div> <!-- para-detail -->
+                </div> <!-- description -->
+              </div> <!-- clearfix -->
+              <div class="group-controll clearfix">
+                <div class="pull-left">
+                  <div class="bs-example bs-example-control-sizing" data-example-id="form-control-height-sizes">
+                    <form class="form-inline">
+                      <div class="controls">
+                        <select class="form-control">
+                          <option value="">All categories</option>
+                          <option value="">Changing Pad Covers</option>
+                          <option value="">Pajama Sets</option>
+                          <option value="">Early Walker SleepSacks</option>
+                          <option value="">Footies &mp; Gowns</option>
+                          <option value="">SleepSack Swaddles</option>
+                        </select>
+                        <select class="form-control">
+                          <option value="">All gender</option>
+                          <option value="">Girls</option>
+                          <option value="">Boys</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div> <!-- bs-example -->
+                </div> <!-- pull-left -->
+                <div class="pull-right">
+                  <ul class="social-all">
+                    <li class="ic-facebook"><a href="#" class="over4"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                    <li class="ic-twitter"><a href="#" class="over4"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+                    <li class="ic-pinterest"><a href="#" class="over4"><i class="fa fa-pinterest-square fa-2x"></i></a></li>
+                  </ul> <!-- social-all -->
+                </div> <!-- pull-right -->
+              </div> <!-- group-controll -->
+            </div> <!-- catagory-top -->
+            <div class="box-product">
+              <div class="container">
+                <div class="row">
+                  <h2>Boys</h2>
+                  <ul class="list-product clearfix">
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                    <li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                      <a href="#">
+                        <span class="box-dis">
+                          <span class="title">Summer Steals</span>
+                          <span class="detail">make out like a bandit make out like a bandit make out like a bandit</span>
+                          <span class="spec clearfix">
+                            <button type="button" class="btn btn-sm btn-danger pull-left">Add cart</button>
+                            <span class="box-right pull-right">
+                              <em class="type sale-price">$5.99</em>  <em class="show-now current-price">$ 9,80</em>
+                            </span>
+                          </span>
+                        </span> <!-- box-dis -->
+                        <span class="box-photo">
+                          <img class="top img-responsive" src="images/product_02.jpg" alt="">
+                        </span> <!-- box-photo -->
+                      </a>
+                    </li> <!-- item-product-li -->
+                  </ul> <!-- list-product -->
+                </div> <!-- row -->
+              </div> <!-- container -->
+            </div> <!-- box-product -->
+          </div> <!-- catagory-detail -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </main> <!-- main-content -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="col-sm-6 col-md-3 footet-left">
+            <h3>INFORMATION</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 footet-left">
+            <h3>CATEGORIES</h3>
+            <ul>
+              <li><a href="#">New today</a></li>
+              <li><a href="#">Shop body catagory</a></li>
+              <li><a href="#">Shop by size</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 footet-left">
+            <h3>MY ACCOUNT</h3>
+            <ul>
+              <li><a href="#">My account</a></li>
+              <li><a href="#">My addresses</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 footet-left">
+            <h3>NEWSLETTER</h3>
+            <div class="sub-text">
+              <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}"/>
+              <input type="submit" value="" >
+            </div>
+          </div>
+          <div class="clearfix"> </div>
+        </div>
+        <div class="copy-rights">
+          <p>&copy; 2015 Olivia. All Rights Reserved | Design by <a href="http://olivia.com/">Olivia</a> </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scrollTop over4">
+      <i class="fa fa-arrow-circle-up fa-3x"></i>
+    </div>
+
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/opacity-rollover2.1.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

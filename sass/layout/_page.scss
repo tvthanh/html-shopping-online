@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	width: 100%;
 	color: #333;
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	@include rem("font-size", 14);
 	line-height: 1.3;
 	background-color: #fff;
@@ -59,7 +59,6 @@ ol li, ul li {
 	h3 {
 		color: #F9FF00;
 	  text-align: right;
-		font-family: 'Metamorphous', cursive;
 	  @include rem("font-size", 14);
 	  @include rem("padding", 16, 0, 16, 50);
 	  background: url(../images/img_hotline.png) no-repeat;
@@ -243,7 +242,7 @@ ol li, ul li {
 .box-product {
 	h2 {
 		@include rem("font-size", 30);
-		font-family: 'Metamorphous', cursive;
+	
 	}
 	img {
 		width: 100%;
@@ -274,7 +273,6 @@ ol li, ul li {
 	.title {
 		color: #fc9835;
 		text-align: center;
-		font-family: 'Metamorphous', cursive;
 		@include rem("font-size", 20);
 		@include rem("padding",0, 0, 10, 0);
 	}
@@ -318,13 +316,11 @@ ol li, ul li {
 }
 
 footer {
-	// background-color: rgba(102, 51, 0, 0.7);
   background-color: rgba(51, 51, 51, 0.9);
 	@include rem("padding", 35, 0, 50);
 }
 
 .footet-left h3 {
-  font-family: 'Metamorphous', cursive;
   color: #fff;
   font-size: 1.2em;
   font-weight: 600;
@@ -409,112 +405,5 @@ footer {
 	z-index: 999;
 	i {
 		color: rgba(102, 51, 0, 0.85);
-	}
-}
-
-@media only screen and (max-width: 992px) {
-	#shop-by-size {
-		&.dropdown-menu {
-			left: auto !important;
-			right: 0;
-		}
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.logo {
-		width: 100%;
-	  position: static;
-	}
-
-	.hot-line {
-		display: none;
-	}
-
-	.btn-bar {
-	  display: block;
-	}
-
-	.ic-cart {
-		margin-right: 5px;
-	}
-
-	.navigation {
-		position: relative;
-		@include rem("padding", 0);
-	}
-
-	.box-navi {
-		width: 100%;
-		float: none;
-		display: none;
-		@include rem("padding", 0);
-		background-color: #fefefe;
-		border: 1px solid rgba(0, 0, 0, 0.15);
-		border-radius: 5px;
-		> ul {
-			margin: 0;
-			padding: 0;
-			> li {
-				display: block;
-				margin: 0;
-				padding: 0;
-				> a {
-					display: block;
-				  @include rem("font-size", 16);
-					@include rem("padding", 10);
-					text-decoration: none;
-					&:hover, &:focus {
-						background-color: #e3e3e3;
-					}
-				}
-			}
-		}
-	}
-	.dropdown-menu {
-		position: static;
-    top: none;
-    left: none;
-    float: none;
-    border: none;
-	}
-	#shop-by-size {
-		&.dropdown-menu {
-			width: 100%;
-			left: 0 !important;
-			right: auto;
-		}
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	#shop-by-size {
-		&.dropdown-menu {
-			width: 100%;
-			left: 0 !important;
-			right: auto;
-		}
-	}
-	.list-product {
-		li {
-			width: 100%;
-			background: transparent;
-		}
-	}
-}
-
-@media only screen and (max-width: 390px) {
-	.search-cart {
-		width: 100%;
-	}
-	.btn-bar {
-	  bottom: 53px;
-	}
-	.ic-search {
-		display: none;
-	}
-	.form-search {
-		float: none;
-		width: 100%;
 	}
 }

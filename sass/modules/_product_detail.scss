@@ -1,0 +1,105 @@
+//====================================================
+//------------------- Product Detail -----------------
+//====================================================
+
+#product-detail {
+	@include rem("padding", 20, 0);
+	position: relative;
+	.photo {
+		padding: 0;
+	}
+	.description {
+		h2 {
+			line-height: 25px;
+			margin: 0;
+			@include rem("font-size", 25);
+			@include rem("padding", 15, 0);
+		}
+		.sale-off {
+			color: #999;
+			@include rem("font-size", 16);
+		}
+	}
+	.para-detail {
+		@include rem("font-size", 16);
+		line-height: 25px;
+	}
+	.list-des {
+		@include rem("padding", 15, 0, 15, 30);
+		li {
+			list-style: inherit;
+		}
+	}
+	.box-value {
+		border-top: 1px dashed #666;
+		@include rem("padding", 20, 0, 20, 30);
+		.buy-price {
+			color: #FF0000;
+			font-weight: 600;
+			@include rem("font-size", 25);
+			line-height: 25px;
+		}
+		em {
+			color: #3e3e3e;
+			@include rem("font-size", 18);
+			text-decoration: line-through;
+		}
+	}
+	.group-controll {
+		@include rem("padding", 50, 0, 0);
+		button {
+			width: 120px;
+		}
+	}
+	.social-all {
+		@include rem("padding", 10, 0, 0);
+		li {
+			float: right;
+			@include rem("padding", 0, 5);
+			&:nth-child(1) {
+				i {
+					color: #3B5A98;
+				}
+			}
+			&:nth-child(2) {
+				i {
+					color: #1CC6FF;
+				}
+			}
+			&:nth-child(3) {
+				i {
+					color: #CD1F28;
+				}
+			}
+		}
+	}
+	.box-recent {
+		@include rem("padding", 20, 0);
+		h2 {
+			@include rem("font-size", 30);
+		}
+	}
+	.list-recent {
+		li {
+			@include rem("padding", 2);
+		}
+	}
+	.list-product {
+		.sale-price {
+			color: #F9FF00;
+			font-weight: 600;
+			@include rem("font-size", 18);
+		}
+		.current-price {
+			color: #fefefe;
+			text-decoration: line-through;
+			@include rem("font-size", 13);
+		}
+	}
+	.box-right {
+		@include rem("padding", 5, 0, 0);
+	}
+	.view-more {
+		@include rem("padding", 20, 0, 0);
+	}
+}

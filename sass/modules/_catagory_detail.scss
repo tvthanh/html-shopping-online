@@ -1,0 +1,76 @@
+//====================================================
+//------------------- Detail Catagory-----------------
+//====================================================
+
+#catagory-detail {
+	@include rem("padding", 20, 0);
+	position: relative;
+	.photo {
+		padding: 0;
+	}
+	.list-thumbs {
+		li {
+			@include rem("padding", 0, 0, 4);
+		}
+	}
+	.description {
+		h2 {
+			line-height: 25px;
+			margin: 0;
+			@include rem("font-size", 25);
+			@include rem("padding", 15, 0);
+		}
+		.sale-off {
+			color: #999;
+			@include rem("font-size", 16);
+		}
+	}
+	.para-detail {
+		@include rem("font-size", 16);
+		line-height: 25px;
+	}
+	.group-controll {
+		@include rem("padding", 20, 0);
+		select {
+			width: 160px;
+			display: inline-block;
+		}
+	}
+	.social-all {
+		@include rem("padding", 3, 0, 0);
+		li {
+			float: left;
+			@include rem("padding", 0, 0, 0, 5);
+			&:nth-child(1) {
+				i {
+					color: #3B5A98;
+				}
+			}
+			&:nth-child(2) {
+				i {
+					color: #1CC6FF;
+				}
+			}
+			&:nth-child(3) {
+				i {
+					color: #CD1F28;
+				}
+			}
+		}
+	}
+	.list-product {
+		.sale-price {
+			color: #F9FF00;
+			font-weight: 600;
+			@include rem("font-size", 18);
+		}
+		.current-price {
+			color: #fefefe;
+			text-decoration: line-through;
+			@include rem("font-size", 13);
+		}
+	}
+	.box-right {
+		@include rem("padding", 5, 0, 0);
+	}
+}
