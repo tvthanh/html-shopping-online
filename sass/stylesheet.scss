@@ -21,6 +21,8 @@
 //====================================================
 @import "layout/page";
 @import "layout/jssorSlider";
+@import "layout/bootstrap-multiselect";
+@import "layout/easyzoom";
 
 
 // Modules
@@ -28,6 +30,9 @@
 @import "modules/catagory_detail";
 @import "modules/product_detail";
 @import "modules/cart";
+@import "modules/account_info";
+@import "modules/login";
+@import "modules/payment";
 @import "modules/breakpoint";
 
 

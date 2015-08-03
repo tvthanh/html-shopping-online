@@ -1,57 +1,47 @@
 //====================================================
 //--------------------- Cart Page --------------------
 //====================================================
-#cart-page {
+#payment {
 	h2 {
 		line-height: 25px;
 		margin: 0;
 		@include rem("font-size", 25);
 		@include rem("padding", 15, 0);
 	}
-	.cart-top {
+	h3 {
+		line-height: 25px;
+		margin: 0;
+		@include rem("font-size", 20);
+		@include rem("padding", 15, 0);
+	}
+	.payment-top {
 		@include rem("padding", 20, 0);
 	}
 	.continue-shop {
 		@include rem("margin", 15, 0);
 	}
-	.list-cart {
+	.list-payment {
 		li {
 			@include rem("padding", 5);
 			border-bottom: 1px solid #BBB8B8;
-			&:nth-child(1) {
+			&:first-child {
 				border-top: 1px solid #BBB8B8;
+			}
+			&:last-child {
+				border: none;
 			}
 		}
 	}
-	.infor-product {
-		@include rem("padding", 0, 0, 0, 5);
-		h3 {
-			font-weight: 600;
-			@include rem("padding", 10, 0, 0);
-		}
-		.spec {
-			@include rem("margin", 5, 0);
-		}
-		.form-group {
-			margin-bottom: 0;
-		}
-		select {
-			display: none;
-		}
-	}
-	.price {
-		@include rem("padding", 10, 0, 0);
-		font-weight: 600;
-	}
-	.btn-controll {
-		@include rem("padding", 10, 0, 0);
-		text-align: right;
+	#card-cvv,
+	select[name="exp-year"] {
+		margin-left: 5px;
 	}
 	.summary-cart {
+		@include rem("margin", 55, 0, 0);
 		@include rem("padding", 10);
 		border: 1px solid #BBB8B8;
 		@include rem("font-size", 16);
-		h2 {
+		h3 {
 			text-align: center;
 			@include rem("font-size", 25);
 			@include rem("padding", 15, 0, 30);
@@ -59,16 +49,19 @@
 	}
 	.summary-detail {
 		@include rem("padding", 0, 10);
-	}
-	.payment-type {
-		text-align: center;
-		@include rem("padding", 30, 0, 15);
-		@include rem("margin", 15, 0, 0);
-		border-top: 1px solid #BBB8B8;
-		.ic-payment {
-			height: 40px;
-			display: inline-block;
-			@include rem("padding", 0, 10);
+		> div {
+			@include rem("padding", 0, 0, 10);
 		}
+	}
+	.total-payment {
+		@include rem("padding", 20, 10, 10);
+		border-top: 1px solid #BBB8B8;
+		span {
+			font-weight: 600;
+			@include rem("font-size", 18);
+		}
+	}
+	.box-slider {
+		border: 1px solid #E0DFDF;
 	}
 }

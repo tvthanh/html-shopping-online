@@ -1,0 +1,71 @@
+//====================================================
+//------------------- Account Info -------------------
+//====================================================
+#account-info {
+	h2 {
+		line-height: 25px;
+		margin: 0;
+		@include rem("font-size", 25);
+		@include rem("padding", 50, 10, 20, 10);
+		@include rem("margin", 0, 0, 30);
+		border-bottom: 1px solid #BBB8B8;
+	}
+	h3 {
+		color: #7B5025;
+		line-height: 25px;
+		@include rem("font-size", 25);
+		@include rem("margin", 0, 0, 15);
+		@include rem("padding", 0, 0, 5);
+		border-bottom: 1px dashed #7B5025;
+	}
+	.account-controll {
+		@include rem("margin", 0, 0, 40);
+		border: 1px solid #BBB8B8;
+		li {
+			border-bottom: 1px solid #BBB8B8;
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				color: #333;
+				display: block;
+				@include rem("font-size", 16);
+				@include rem("padding", 10, 10);
+				&:hover, &:focus {
+					color: #7B5025;
+					text-decoration: none;
+					background-color: #e3e3e3;
+				}
+			}
+		}
+	}
+	.list-cart {
+		li {
+			@include rem("padding", 5);
+			border-bottom: 1px solid #BBB8B8;
+			&:nth-child(1) {
+				border-top: 1px solid #BBB8B8;
+			}
+		}
+	}
+	.infor-product {
+		@include rem("padding", 0, 0, 0, 5);
+		h4 {
+			font-weight: 600;
+			@include rem("padding", 10, 0, 0);
+		}
+		.spec {
+			@include rem("margin", 5, 0);
+		}
+		.form-group {
+			margin-bottom: 0;
+		}
+		select {
+			display: none;
+		}
+	}
+	.price {
+		@include rem("padding", 10, 0, 0);
+		font-weight: 600;
+	}
+}

@@ -61,7 +61,7 @@ ol li, ul li {
 	  text-align: right;
 	  @include rem("font-size", 14);
 	  @include rem("padding", 16, 0, 16, 50);
-	  background: url(../images/img_hotline.png) no-repeat;
+	  background: url(../images/phone.png) no-repeat;
 	  span {
 	  	@include rem("margin", 0, 5);
 	  }
@@ -110,7 +110,6 @@ ol li, ul li {
 	@include rem("padding", 10, 0, 0, 10);
 	text-decoration: none;
 	position: relative;
-	// color: #F9FF00;
 	color: #e3e3e3;
 	&:hover, &:focus {
 		color: #8A8686;
@@ -131,7 +130,7 @@ ol li, ul li {
 
 .navigation {
 	position: relative;
-	@include rem("padding", 10, 0, 7, 0);
+	@include rem("padding", 20, 0, 7);
 	border-bottom: 1px solid rgba(102, 51, 0, 0.85);
 }
 
@@ -212,6 +211,9 @@ ol li, ul li {
 
 .nav-setting {
 	@include rem("padding", 25, 10, 0, 0);
+	&.flag-respon {
+		@include rem("padding", 15, 0, 0, 10);
+	}
 	> li {
 		a {
 			color: #333;
@@ -225,6 +227,10 @@ ol li, ul li {
 			text-transform: uppercase;
 		}
 	}
+}
+
+.acc-menu {
+	display: none;
 }
 
 .ic-account {
@@ -323,7 +329,7 @@ footer {
 .footet-left h3 {
   color: #fff;
   font-size: 1.2em;
-  font-weight: 600;
+  // font-weight: 600;
   @include rem("padding", 15, 0, 0);
 }
 
@@ -378,12 +384,18 @@ footer {
   color: #fff;
   margin-left: -4px;
   background: url(../images/arrow.png) no-repeat 14px 12px;
-  padding: 6px 22px 14px 19px;
+  padding: 10px 22px 11px 19px;
   -webkit-appearance: none;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
   -o-transition: 0.5s all;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+	.sub-text input[type="submit"] {
+		padding: 6px 22px 14px 19px;
+	}
 }
 
 .copy-rights {
@@ -398,8 +410,12 @@ footer {
 }
 
 .scrollTop {
+	display: none;
+	text-decoration: none;
 	position: fixed;
-	bottom: 285px;
+	bottom: 14px;
+	right: 3%;
+	bottom: 25px;
 	right: 30px;
 	cursor: pointer;
 	z-index: 999;

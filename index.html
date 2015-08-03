@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shop Online</title>
+    <title>Home Page</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -21,11 +21,8 @@
       <div class="header-top">
         <div class="container clearfix">
           <div class="logo">
-            <a href="index.html" class="over4"><img src="images/logo.png" /></a>
+            <a href="index.html"><img src="images/logo.png" /></a>
           </div> <!-- logo -->
-          <div class="hot-line pull-right">
-            <h3><span>(800)</span><i>1444 000 4040</i></h3>
-          </div> <!-- header-contact -->
           <div class="btn-bar">
             <i class="fa fa-bars fa-3x"></i>
           </div> <!-- btn-bar -->
@@ -34,11 +31,43 @@
               <div class="pull-left ic-search">
                 <i class="fa fa-search fa-2x"></i>
               </div> <!-- ic-search -->
-              <a href="#" class="pull-right ic-cart">
+              <ul class="nav-setting flag-respon list-unstyled list-inline pull-right hidden-md hidden-lg">
+                <li class="dropdown flag-controll">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/usa.gif" class="flag-pri" height="25" alt="">
+                    <span class="countryside country-pri hidden-xs hidden-sm hidden-md">USA</span>
+                    <span class="glyphicon glyphicon-chevron-down hidden-xs hidden-sm hidden-md" aria-hidden="true"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#"> 
+                        <img src="images/usa.gif" height="13" alt="">
+                        <span class="countryside">USA</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"> 
+                        <img src="images/vietnam.png" height="13" alt="">
+                        <span class="countryside">Viet Nam</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"> 
+                        <img src="images/france.png" height="13" alt="">
+                        <span class="countryside">France</span>
+                      </a>
+                    </li>
+                  </ul> <!-- dropdown-menu -->
+                </li> <!-- flag-controll -->
+              </ul> <!-- nav-setting -->
+              <a href="cart.html" class="pull-right ic-cart">
                 <i class="fa fa-shopping-cart fa-2x"></i>
                 <em>1</em>
               </a> <!-- ic-cart -->
             </div> <!-- box-icon -->
+            <div class="hot-line pull-right">
+              <h3><span>(800)</span><i>1444 000 4040</i></h3>
+            </div> <!-- hot-line -->
             <form class="form-search pull-left" role="search">
               <input type="text" class="form-control" id="ipt-search" placeholder="Search">
             </form> <!-- form-search -->
@@ -96,6 +125,16 @@
                   </li>
                 </ul> <!-- shop-by-size -->
               </li>
+              <li class="dropdown hidden-md hidden-lg acc-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Orders</a></li>
+                  <li><a href="#">Account Info</a></li>
+                  <li><a href="#">My Favorites</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Sign Out</a></li>
+                </ul>
+              </li> <!-- account hidden -->
             </ul> <!-- nav-main -->
           </div> <!-- box-navi -->
           <div class="nav navbar-nav navbar-right hidden-xs hidden-sm clearfix">
@@ -103,18 +142,18 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                 <ul class="dropdown-menu account-sitting">
-                  <li><a href="#">Orders</a></li>
-                  <li><a href="#">Account Info</a></li>
-                  <li><a href="#">My Favorites</a></li>
+                  <li><a href="account_info.html">Orders</a></li>
+                  <li><a href="account_info.html">Account Info</a></li>
+                  <li><a href="account_info.html">My Favorites</a></li>
                   <li role="separator" class="divider"></li>
                   <li><a href="#">Sign Out</a></li>
                 </ul>
               </li>
               <li> | </li>
-              <li class="flag-controll">
-                <a href="#"> 
-                  <img src="images/usa.gif" height="13" alt="">
-                  <span class="countryside">USA</span>
+              <li class="dropdown flag-controll">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img src="images/usa.gif" class="flag-pri" height="13" alt="">
+                  <span class="countryside country-pri">USA</span>
                   <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -122,6 +161,18 @@
                     <a href="#"> 
                       <img src="images/usa.gif" height="13" alt="">
                       <span class="countryside">USA</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> 
+                      <img src="images/vietnam.png" height="13" alt="">
+                      <span class="countryside">Viet Nam</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> 
+                      <img src="images/france.png" height="13" alt="">
+                      <span class="countryside">France</span>
                     </a>
                   </li>
                 </ul>
@@ -550,9 +601,9 @@
       </div>
     </footer>
 
-    <div class="scrollTop over4">
-      <i class="fa fa-arrow-circle-up fa-3x"></i>
-    </div>
+    <div class="scrollTop">
+      <a href="javascript:void(0);" class="over4"><i class="fa fa-arrow-circle-up fa-3x"></i></a>
+    </div> <!-- scrollTop -->
 
     <script src="js/vendor/jquery-1.9.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
@@ -561,18 +612,13 @@
     <script src="js/vendor/jssor.slider.js"></script>
     <script src="js/common.js"></script>
     <script>
-
-        (function($) {
-          $('.dropdown-toggle').dropdown();
-        })(jQuery); // end document jquery
-
         jQuery(document).ready(function ($) {
             var options = {
                 $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
                 $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
                 $AutoPlayInterval: 2000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
                 $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-                $Loop: 0,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
+                //$Loop: 0,                                       //[Optional] Enable loop(circular) of carousel or not, 0: stop, 1: loop, 2 rewind, default value is 1
 
                 $ArrowKeyNavigation: true,                    //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
                 $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500

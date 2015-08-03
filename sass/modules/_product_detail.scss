@@ -8,6 +8,26 @@
 	.photo {
 		padding: 0;
 	}
+	.zoom-box {
+		position: relative;
+		img {
+			// width: 100%;
+		}
+	}
+	.list-thumbs {
+		width: 65px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    z-index: 105;
+		li {
+			border: 1px solid #efefef;
+			@include rem("margin", 0, 0, 5);
+			img {
+				width: 100%;
+			}
+		}
+	}
 	.description {
 		h2 {
 			line-height: 25px;
@@ -46,7 +66,7 @@
 		}
 	}
 	.group-controll {
-		@include rem("padding", 50, 0, 0);
+		@include rem("padding", 0);
 		button {
 			width: 120px;
 		}

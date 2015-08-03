@@ -23,9 +23,6 @@
           <div class="logo">
             <a href="index.html" class="over4"><img src="images/logo.png" /></a>
           </div> <!-- logo -->
-          <div class="hot-line pull-right">
-            <h3><span>(800)</span><i>1444 000 4040</i></h3>
-          </div> <!-- header-contact -->
           <div class="btn-bar">
             <i class="fa fa-bars fa-3x"></i>
           </div> <!-- btn-bar -->
@@ -34,11 +31,43 @@
               <div class="pull-left ic-search">
                 <i class="fa fa-search fa-2x"></i>
               </div> <!-- ic-search -->
-              <a href="#" class="pull-right ic-cart">
+              <ul class="nav-setting flag-respon list-unstyled list-inline pull-right hidden-md hidden-lg">
+                <li class="dropdown flag-controll">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img src="images/usa.gif" class="flag-pri" height="25" alt="">
+                    <span class="countryside country-pri hidden-xs hidden-sm hidden-md">USA</span>
+                    <span class="glyphicon glyphicon-chevron-down hidden-xs hidden-sm hidden-md" aria-hidden="true"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#"> 
+                        <img src="images/usa.gif" height="13" alt="">
+                        <span class="countryside">USA</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"> 
+                        <img src="images/vietnam.png" height="13" alt="">
+                        <span class="countryside">Viet Nam</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"> 
+                        <img src="images/france.png" height="13" alt="">
+                        <span class="countryside">France</span>
+                      </a>
+                    </li>
+                  </ul> <!-- dropdown-menu -->
+                </li> <!-- flag-controll -->
+              </ul> <!-- nav-setting -->
+              <a href="cart.html" class="pull-right ic-cart">
                 <i class="fa fa-shopping-cart fa-2x"></i>
                 <em>1</em>
               </a> <!-- ic-cart -->
             </div> <!-- box-icon -->
+            <div class="hot-line pull-right">
+              <h3><span>(800)</span><i>1444 000 4040</i></h3>
+            </div> <!-- hot-line -->
             <form class="form-search pull-left" role="search">
               <input type="text" class="form-control" id="ipt-search" placeholder="Search">
             </form> <!-- form-search -->
@@ -96,6 +125,16 @@
                   </li>
                 </ul> <!-- shop-by-size -->
               </li>
+              <li class="dropdown hidden-md hidden-lg acc-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Orders</a></li>
+                  <li><a href="#">Account Info</a></li>
+                  <li><a href="#">My Favorites</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Sign Out</a></li>
+                </ul>
+              </li> <!-- account hidden -->
             </ul> <!-- nav-main -->
           </div> <!-- box-navi -->
           <div class="nav navbar-nav navbar-right hidden-xs hidden-sm clearfix">
@@ -103,18 +142,18 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My account <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
                 <ul class="dropdown-menu account-sitting">
-                  <li><a href="#">Orders</a></li>
-                  <li><a href="#">Account Info</a></li>
-                  <li><a href="#">My Favorites</a></li>
+                  <li><a href="account_info.html">Orders</a></li>
+                  <li><a href="account_info.html">Account Info</a></li>
+                  <li><a href="account_info.html">My Favorites</a></li>
                   <li role="separator" class="divider"></li>
                   <li><a href="#">Sign Out</a></li>
                 </ul>
               </li>
               <li> | </li>
-              <li class="flag-controll">
-                <a href="#"> 
-                  <img src="images/usa.gif" height="13" alt="">
-                  <span class="countryside">USA</span>
+              <li class="dropdown flag-controll">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img src="images/usa.gif" class="flag-pri" height="13" alt="">
+                  <span class="countryside country-pri">USA</span>
                   <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
                 </a>
                 <ul class="dropdown-menu">
@@ -122,6 +161,18 @@
                     <a href="#"> 
                       <img src="images/usa.gif" height="13" alt="">
                       <span class="countryside">USA</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> 
+                      <img src="images/vietnam.png" height="13" alt="">
+                      <span class="countryside">Viet Nam</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> 
+                      <img src="images/france.png" height="13" alt="">
+                      <span class="countryside">France</span>
                     </a>
                   </li>
                 </ul>
@@ -158,18 +209,18 @@
                   <div class="bs-example bs-example-control-sizing" data-example-id="form-control-height-sizes">
                     <form class="form-inline">
                       <div class="controls">
-                        <select class="form-control">
-                          <option value="">All categories</option>
-                          <option value="">Changing Pad Covers</option>
-                          <option value="">Pajama Sets</option>
-                          <option value="">Early Walker SleepSacks</option>
-                          <option value="">Footies &mp; Gowns</option>
-                          <option value="">SleepSack Swaddles</option>
+                        <select class="slt-catagory form-control" multiple="multiple">
+                          <option value="All categories">All categories</option>
+                          <option value="Changing Pad Covers">Changing Pad Covers</option>
+                          <option value="Pajama Sets">Pajama Sets</option>
+                          <option value="Early Walker SleepSacks">Early Walker SleepSacks</option>
+                          <option value="Footies &mp; Gowns">Footies &mp; Gowns</option>
+                          <option value="SleepSack Swaddles">SleepSack Swaddles</option>
                         </select>
-                        <select class="form-control">
-                          <option value="">All gender</option>
-                          <option value="">Girls</option>
-                          <option value="">Boys</option>
+                        <select class="slt-catagory form-control" multiple="multiple">
+                          <option value="All gender">All gender</option>
+                          <option value="Girls">Girls</option>
+                          <option value="Boys">Boys</option>
                         </select>
                       </div>
                     </form>
@@ -443,13 +494,22 @@
       </div>
     </footer>
 
-    <div class="scrollTop over4">
-      <i class="fa fa-arrow-circle-up fa-3x"></i>
-    </div>
+    <div class="scrollTop">
+      <a href="javascript:void(0);" class="over4"><i class="fa fa-arrow-circle-up fa-3x"></i></a>
+    </div> <!-- scrollTop -->
 
     <script src="js/vendor/jquery-1.9.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap-multiselect.js"></script>
     <script src="js/vendor/opacity-rollover2.1.js"></script>
     <script src="js/common.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('.slt-catagory').multiselect({
+            maxHeight: 200,
+            numberDisplayed: 1
+          });
+      });
+  </script>
   </body>
 </html>

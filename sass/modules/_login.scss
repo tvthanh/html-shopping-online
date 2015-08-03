@@ -1,107 +1,41 @@
 //====================================================
-//---------------------- Login -----------------------
+//--------------------- Login Page -------------------
 //====================================================
-
 #login-page {
-	width: 100%;
-	margin: 0;
-	@include rem("padding", 0, 0, 80, 0);
-	*, *:after, *:before {
-		margin: 0;
-		padding: 0;
-	}
 	h2 {
-		text-align: center;
-		color: $purple-color;
-		font-weight: 600;
-		text-transform: uppercase;
-		@include rem("font-size", 19);
-		@include rem("padding", 35, 0, 30, 0);
+		line-height: 25px;
 		margin: 0;
+		@include rem("font-size", 25);
+		@include rem("padding", 50, 10, 20, 10);
+		@include rem("margin", 0, 0, 30);
+		border-bottom: 1px solid #BBB8B8;
 	}
 	h3 {
-		color: $purple-color;
-		font-weight: 600;
-		text-transform: uppercase;
-		@include rem("font-size", 14);
-		@include rem("line-height", 20);
-		@include rem("padding", 0, 0, 8, 0);
-		@include rem("margin", 0, 0, 12, 0);
-		border-bottom: 1px solid #000;
+		color: #7B5025;
+		line-height: 25px;
+		@include rem("font-size", 25);
+		@include rem("margin", 0, 0, 15);
+		@include rem("padding", 0, 0, 5);
+		border-bottom: 1px dashed #7B5025;
 	}
-	p.para {
-		color: #2f2f2f;
-		font-weight: 600;
-		@include rem("font-size", 14);
-		@include rem("line-height", 25);
-	}
-	.login-new {
-		width: 445px;
-		min-height: 420px;
-		float: left;
+	.login-content {
 		position: relative;
-		border: 1px solid #000;
-		@include rem("padding", 15);
+		@include roundedCorners(10);
+		@include rem("padding", 20, 0);
+		margin-top: 50px;
+		border: 1px solid #BBB8B8;
 	}
-	.login-register {
-		width: 445px;
-		min-height: 420px;
-		float: right;
-		position: relative;
-		border: 1px solid #000;
-		@include rem("padding", 15);
-	}
-	.detail {
-		min-height: 380px;
-	}
-	.btn-create, .btn-login {
-		// position: absolute;
-		// right: 15px;
-		// bottom: 15px;
-		float: right;
-		color: #fff;
-		text-align: center;
-		border: none;
-		cursor: pointer;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		@include rem("padding", 7, 15);
-		background-color: #000;
-	}
-	.box-ipt {
-		@include rem("padding", 0, 0, 10, 0);
-		label {
-			display: block;
-			color: #666;
-			@include rem("font-size", 14);
-			@include rem("line-height", 25);
-			@include rem("padding", 0, 0, 3, 0);
-		}
-		input {
-			width: 250px;
-			@include rem("padding", 5);
+	.form-login {
+		form {
+			@include rem("margin", 60, 0, 0);
 		}
 	}
-	.para-require {
-		font-weight: normal;
-		text-align: right;
-		color: #E06A2D;
-		@include rem("font-size", 12);
-		@include rem("line-height", 25);
-	}
-	.require {
-		color: #eb340a;
-	}
-	.link-pass {
-		float: left;
-		color: #E06A2D;
-		letter-spacing: 0.1em;
-		@include rem("font-size", 13);
-		@include rem("line-height", 25);
-		@include rem("padding", 4, 0, 0, 0);
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
+	.line-vertical {
+		position: absolute;
+    left: 385px;
+    top: 85px;
+    width: 1px;
+    height: 250px;
+    border-right: 1px solid #BBB8B8;
 	}
 }

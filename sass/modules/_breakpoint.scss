@@ -2,6 +2,26 @@
 //-------------------- Break Point -------------------
 //====================================================
 @media only screen and (max-width: 992px) {
+	.navigation {
+		.container {
+			padding: 0;
+		}
+	}
+	.box-navi {
+		@include rem("padding", 0, 0, 0, 130);
+		> ul {
+			> li {
+				@include rem("margin", 25, 5, 15);
+				> a {
+					color: #333;
+				  font-weight: 600;
+					text-transform: uppercase;
+				  @include rem("font-size", 15);
+					background-color: transparent;
+				}
+			}
+		}
+	}
 	#shop-by-size {
 		&.dropdown-menu {
 			left: auto !important;
@@ -11,6 +31,46 @@
 	#product-detail {
 		.group-controll {
 			@include rem("padding", 10, 0, 0);
+		}
+	}
+	#cart-page {
+		.payment-type {
+			.ic-payment {
+				@include rem("padding", 0);
+			}
+		}
+	}
+	#login-page {
+		.form-login {
+		form {
+			@include rem("margin", 0);
+		}
+	}
+		.form-register {
+			h3 {
+				@include rem("margin", 40, 0, 15);
+			}
+		}
+	}
+	#account-info {
+		h3 {
+			@include rem("margin", 20, 0, 0);
+		}
+	}
+	#payment {
+		#card-cvv,
+		select[name="exp-year"] {
+			margin-left: 0;
+		}
+		select[name="exp-year"] {
+			margin-top: 10px;
+		}
+	}
+	.flag-respon {
+		@include rem("padding", 15, 0, 0, 10);
+		.dropdown-menu {
+			left: auto;
+			right: 0;
 		}
 	}
 }
@@ -33,9 +93,28 @@
 		margin-right: 5px;
 	}
 
+	.acc-menu {
+		display: block;
+	}
+
+	.flag-respon {
+		@include rem("padding", 15, 0, 0, 10);
+		.dropdown-menu {
+			left: auto;
+			right: 0;
+		}
+	}
+
 	.navigation {
 		position: relative;
 		@include rem("padding", 0);
+		.dropdown-menu {
+			position: static;
+	    top: none;
+	    left: none;
+	    float: none;
+	    border: none;
+		}
 	}
 
 	.box-navi {
@@ -44,7 +123,7 @@
 		display: none;
 		@include rem("padding", 0);
 		background-color: #fefefe;
-		border: 1px solid rgba(0, 0, 0, 0.15);
+		// border: 1px solid rgba(0, 0, 0, 0.15);
 		border-radius: 5px;
 		> ul {
 			margin: 0;
@@ -65,18 +144,21 @@
 			}
 		}
 	}
-	.dropdown-menu {
-		position: static;
-    top: none;
-    left: none;
-    float: none;
-    border: none;
-	}
 	#shop-by-size {
 		&.dropdown-menu {
 			width: 100%;
 			left: 0 !important;
 			right: auto;
+		}
+	}
+	#cart-page {
+		.summary-cart {
+			@include rem("margin", 20, 0, 0);
+		}
+		.payment-type {
+			.ic-payment {
+				@include rem("padding", 0, 10);
+			}
 		}
 	}
 }
@@ -93,6 +175,17 @@
 		li {
 			width: 100%;
 			background: transparent;
+		}
+	}
+	#cart-page {
+		.btn-controll {
+			text-align: center;
+		}
+		.payment-type {
+			.ic-payment {
+				height: 40px;
+				@include rem("padding", 0, 5);
+			}
 		}
 	}
 }
@@ -115,6 +208,11 @@
 		.group-controll {
 			select {
 				width: 105px;
+			}
+		}
+		.payment-type {
+			.ic-payment {
+				@include rem("padding", 0, 10);
 			}
 		}
 	}
