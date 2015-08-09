@@ -112,7 +112,7 @@ ol li, ul li {
 	position: relative;
 	color: #e3e3e3;
 	&:hover, &:focus {
-		color: #8A8686;
+		color: #e3e3e3;
 	}
 	em {
 		text-align: center;
@@ -421,5 +421,21 @@ footer {
 	z-index: 999;
 	i {
 		color: rgba(102, 51, 0, 0.85);
+	}
+}
+
+#loading-page {
+	height: 350px;
+	.box-data {
+		position: relative;
+		.list-data {
+			height: 250px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+		.loading-gif {
+			text-align: center;
+			display: none;
+		}
 	}
 }

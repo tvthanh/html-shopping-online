@@ -7,10 +7,24 @@
 	position: relative;
 	.photo {
 		padding: 0;
+		position: relative;
+		.photo-large {
+			width: 100%;
+		}
 	}
 	.list-thumbs {
+		width: 65px;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    z-index: 105;
 		li {
-			@include rem("padding", 0, 0, 4);
+			border: 1px solid #efefef;
+			@include rem("margin", 0, 0, 5);
+			img {
+				width: 100%;
+				cursor: pointer;
+			}
 		}
 	}
 	.description {

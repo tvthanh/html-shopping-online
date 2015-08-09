@@ -9599,7 +9599,7 @@ ol li, ul li {
   position: relative;
   color: #e3e3e3; }
   .ic-cart:hover, .ic-cart:focus {
-    color: #8A8686; }
+    color: #e3e3e3; }
   .ic-cart em {
     text-align: center;
     width: 20px;
@@ -9867,6 +9867,18 @@ footer {
   .scrollTop i {
     color: rgba(102, 51, 0, 0.85); }
 
+#loading-page {
+  height: 350px; }
+  #loading-page .box-data {
+    position: relative; }
+    #loading-page .box-data .list-data {
+      height: 250px;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+    #loading-page .box-data .loading-gif {
+      text-align: center;
+      display: none; }
+
 .jssort11 {
   position: absolute;
   width: 320px;
@@ -10122,10 +10134,23 @@ footer {
   padding: 1.25rem 0rem;
   position: relative; }
   #catagory-detail .photo {
-    padding: 0; }
-  #catagory-detail .list-thumbs li {
-    padding: 0px 0px 4px;
-    padding: 0rem 0rem 0.25rem; }
+    padding: 0;
+    position: relative; }
+    #catagory-detail .photo .photo-large {
+      width: 100%; }
+  #catagory-detail .list-thumbs {
+    width: 65px;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    z-index: 105; }
+    #catagory-detail .list-thumbs li {
+      border: 1px solid #efefef;
+      margin: 0px 0px 5px;
+      margin: 0rem 0rem 0.3125rem; }
+      #catagory-detail .list-thumbs li img {
+        width: 100%;
+        cursor: pointer; }
   #catagory-detail .description h2 {
     line-height: 25px;
     margin: 0;

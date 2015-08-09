@@ -282,9 +282,9 @@
                         <div class="col-md-6">
                           <form action="">
                             <div class="form-group">
-                                <label for="card-number">Card number</label>
-                                <input type="text" class="form-control" id="card-number">
-                              </div> <!-- form-group -->
+                              <label for="card-number">Card number</label>
+                              <input type="text" class="form-control" id="card-number">
+                            </div> <!-- form-group -->
                             <div class="form-group">
                               <label for="name-bank">The bank of card</label>
                               <select name="the-bank" class="form-control" id="name-bank">
@@ -344,6 +344,52 @@
                           </form>
                         </div> <!-- col-md-6 -->
                       </div> <!-- form-external -->
+                    </li>
+                    <li>
+                      <h3>Address receive</h3>
+                      <div class="payment-form form-address clearfix">
+                        <div class="col-md-6">
+                          <form action="">
+                            <div class="form-group">
+                              <label for="fullname" class="control-label">Your name</label>
+                              <input type="text" class="form-control" id="fullname" placeholder="Your full name">
+                            </div> <!-- form-group -->
+                            <div class="form-group">
+                              <label for="address" class="control-label">Your address</label>
+                              <textarea class="form-control" id="address" rows="3" placeholder="Your address"></textarea>
+                            </div> <!-- form-group -->
+                            <div class="form-group">
+                              <label for="province" class="control-label">Province / City</label>
+                                <select name="province" class="form-control" id="province">
+                                  <option value="Ha Noi">Ha Noi</option>
+                                  <option value="Ho Chi Minh" selected>Ho Chi Minh</option>
+                                  <option value="Da Nang">Da Nang</option>
+                                  <option value="Hai Phong">Hai Phong</option>
+                                  <option value="Can Tho">Can Tho</option>
+                                </select>
+                            </div> <!-- form-group -->
+                            <div class="form-group">
+                              <label for="district" class="control-label">District</label>
+                                <select name="district" class="form-control" id="district">
+                                  <option value="Quan 1">Quan 1</option>
+                                  <option value="Quan 2">Quan 2</option>
+                                  <option value="Quan 3">Quan 3</option>
+                                  <option value="Quan 4">Quan 4</option>
+                                  <option value="Quan 5">Quan 5</option>
+                                </select>
+                            </div> <!-- form-group -->
+                            <div class="form-group">
+                              <label for="phone" class="control-label">Your name</label>
+                              <div class="input-group">
+                                <div class="input-group-addon">+84</div>
+                                <input type="text" class="form-control" id="phone" placeholder="Your phone">
+                            </div> <!-- form-group -->
+                            <div class="box-btn clearfix">
+                              <button type="button" class="btn btn-danger pull-right continue-shop">continue</button>
+                            </div> <!-- box-btn -->
+                          </form>
+                        </div> <!-- col-md-6 -->
+                      </div> <!-- form-address -->
                     </li>
                   </ul> <!-- list-payment -->
                 </div>
